@@ -1,0 +1,176 @@
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/flight_details_shape"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/flightSegment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/segmentDeails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CCU-DEL"
+                android:textColor="@color/White" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flightDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <!-- <RelativeLayout
+                android:id="@+id/flightNumberLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight = "1"
+                android:layout_toLeftOf="@+id/departureTime">-->
+            <TextView
+                android:id="@+id/flightNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Flight No: "
+                android:textColor="@color/White" />
+
+            <TextView
+                android:id="@+id/flightNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/flightNumberLabel"
+                android:text="AI235"
+                android:textColor="@color/White" />
+
+
+
+            <TextView
+                android:id="@+id/flyTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/flyTime"
+                android:text="Time : "
+                android:textColor="@color/White" />
+
+            <TextView
+                android:id="@+id/flyTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:text="05:45 - 08:30"
+                android:textColor="@color/White" />
+            <!-- </RelativeLayout>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gateAndDateSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <!--         <TextView
+                         android:id="@+id/terminalGateLabel"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_alignParentRight="false"
+                         android:text="Gate No: "
+                         android:textColor="@color/White" />
+
+                     <TextView
+                         android:id="@+id/terminalGate"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/terminalGateLabel"
+                         android:text="23"
+                         android:textColor="@color/White" />
+           -->
+            <TextView
+                android:id="@+id/flyDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/flyDate"
+                android:text="Date : "
+                android:textColor="@color/White" />
+
+
+            <TextView
+                android:id="@+id/flyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="21-11-2017"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+            <!-- </RelativeLayout>-->
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fareClassButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/businessCLass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/economyClass"
+                android:bottomLeftRadius="15dp"
+                android:bottomRightRadius="15dp"
+                android:gravity="left"
+                android:onClick="next_fragment"
+                android:padding="20dp"
+                android:text="Business Class"
+                android:topLeftRadius="15dp"
+                android:topRightRadius="15dp" />
+
+            <Button
+                android:id="@+id/economyClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:bottomLeftRadius="15dp"
+                android:bottomRightRadius="15dp"
+                android:onClick="next_fragment"
+                android:padding="20dp"
+                android:text="Economy Class"
+                android:topLeftRadius="15dp"
+                android:topRightRadius="15dp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</merge>

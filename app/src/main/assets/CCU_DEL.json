@@ -1,0 +1,73 @@
+{
+  "flightItinerary":{
+    "Source":"CCU",
+    "Destination":"DEL"
+  },
+  "schedules":[
+    {
+      "flightNo":"234",
+      "carrier":"AI",
+      "departureTime": "01:05",
+      "arrivalTime": "03:45",
+      "fareClass": "bis",
+      "gateNo": "23"
+    },
+    {
+      "flightNo":"254",
+      "carrier":"AI",
+      "departureTime": "04:55",
+      "arrivalTime": "07:00",
+      "fareClass": "bis",
+      "gateNo": "25"
+    },
+    {
+      "flightNo":"234",
+      "carrier":"AI",
+      "departureTime": "01:05",
+      "arrivalTime": "03:45",
+      "fareClass": "eco",
+      "gateNo": "23"
+    },
+    {
+      "flightNo":"254",
+      "carrier":"AI",
+      "departureTime": "04:55",
+      "arrivalTime": "07:00",
+      "fareClass": "eco",
+      "gateNo": "25"
+    },
+    {
+      "flightNo":"115",
+      "carrier":"AI",
+      "departureTime": "08:25",
+      "arrivalTime": "11:45",
+      "fareClass": "bis",
+      "gateNo": "15"
+    },
+    {
+      "flightNo":"115",
+      "carrier":"AI",
+      "departureTime": "13:25",
+      "arrivalTime": "11:45",
+      "fareClass": "eco",
+      "gateNo": "15"
+    },
+    {
+      "flightNo":"187",
+      "carrier":"AI",
+      "departureTime": "16:30",
+      "arrivalTime": "14:22",
+      "fareClass": "bis",
+      "gateNo": "01"
+    },
+    {
+      "flightNo":"187",
+      "carrier":"AI",
+      "departureTime": "16:30",
+      "arrivalTime": "14:22",
+      "fareClass": "eco",
+      "gateNo": "01"
+    }
+
+  ]
+}

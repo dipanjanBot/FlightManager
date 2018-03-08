@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="flightdetailsTab" type="id" />
+    <item name="passengerdetailsTab" type="id" />
+    <item name="paymentTab" type="id" />
+</resources>

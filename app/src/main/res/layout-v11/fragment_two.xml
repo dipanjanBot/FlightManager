@@ -1,0 +1,1380 @@
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.cognizant.flymanager.subfragment.PassengerFragment">
+
+        <LinearLayout
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 1"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p1_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p1_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p1_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p1_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p1_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p1_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p1_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p1_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p1_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p1_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p1_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p1_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 2"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p2_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p2_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p2_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p2_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p2_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p2_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p2_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p2_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p2_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p2_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p2_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p2_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p3"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 3"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p3_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p3_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p3_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p3_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p3_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p3_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p3_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p3_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p3_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p3_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p3_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p3_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 4"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p4_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p4_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p4_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p4_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p4_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p4_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p4_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p4_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p4_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p4_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p4_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p4_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 5"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p5_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p5_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p5_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p5_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p5_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p5_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p5_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p5_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p5_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p5_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p5_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p5_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 6"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p6_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p6_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p6_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p6_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p6_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p6_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p6_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p6_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p6_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p6_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p6_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p6_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 7"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p7_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p7_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p7_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p7_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p7_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p7_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p7_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p7_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p7_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p7_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p7_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p7_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 8"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p8_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p8_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p8_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p8_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p8_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p8_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p8_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p8_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p8_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p8_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p8_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p8_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/flight_details_shape"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstPassengerDetails9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Passenger 9"
+                    android:textColor="@color/White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p9_firstNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p9_first_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="First Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p9_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p9_MiddleNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p9_middle_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Middle Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p9_middle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p9_lastNameRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p9_last_nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last Name : "
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/p9_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/p9_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/p9_gender_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gender : "
+                    android:textColor="@color/White" />
+
+                <Spinner
+                    android:id="@+id/p9_gender_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/DarkBlue" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/confirm_fillUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle"
+                android:onClick="next_fragment"
+                android:text="Confirm"
+                android:textColor="@color/DarkBlue" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context="com.cognizant.flymanager.subfragment.PassengerFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/passenger_form"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lightBlue</item>
+        <item name="colorPrimaryDark">@color/DarkBlue</item>
+        <item name="colorAccent">@color/DarkBlue</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyWhiteTheme" parent="android:Theme.Light">
+        <item name="android:textAppearance">@style/MyWhiteTextAppearance</item>
+    </style>
+    <style name="MyWhiteTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">Agency FB</item>
+        <item name="android:textSize">13pt</item>
+    </style>
+
+
+</resources>

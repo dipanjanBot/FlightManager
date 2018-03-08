@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightBlue"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:context=".activity.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/Row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/SourceRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/sourceTextLabel1"
+                    style="@style/MyWhiteTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="From"
+                    android:textColor="#ffffff" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/sourceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Source Station Code"
+                    android:inputType="text"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/colorTransparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/DestinationRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/DestinationTextLabel1"
+                        style="@style/MyWhiteTheme"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="To"
+                        android:textColor="#ffffff" />
+
+                <AutoCompleteTextView
+                        android:id="@+id/destinationTextView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/DestinationTextLabel1"
+                        android:background="@drawable/edittext_style"
+                        android:ems="10"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:hint="Destination Station Code"
+                        android:inputType="text"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textColor="@color/colorTransparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TravelDateRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/TravelDateLabel1"
+                    style="@style/MyWhiteTheme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/TravelDateTextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/DestinationTextLabel1"
+                    android:background="@drawable/edittext_style"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="left"
+                    android:hint="Date of Travel"
+                    android:inputType="text"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorTransparent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/addMoreFlights"
+                style="@style/MyWhiteTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="+ Add More Flights" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/passengerCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/NoOfPaxLabel1"
+                    style="@style/MyWhiteTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Passengers"
+                    android:textColor="@color/White" />
+
+                <EditText
+                    android:id="@+id/NoOfPaxTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/NoOfPaxLabel1"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/colorTransparent" />
+
+
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="false"
+                    android:onClick="action"
+                    android:padding="5dp"
+                    android:paddingBottom="@dimen/tab_padding_bottom"
+                    android:text="Search"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/search"
+                    android:onClick="action"
+                    android:padding="5dp"
+                    android:text="Reset"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
