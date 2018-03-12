@@ -53,7 +53,7 @@ public class FlightDetailsItemView extends RelativeLayout {
         mFlightNumberTextView = (TextView) findViewById(R.id.flightNumber);
         mFlightTimeTextView = (TextView) findViewById(R.id.flyTime);
         mFlightDateTextView = (TextView) findViewById(R.id.flyDate);
-        //mGateTextView = (TextView) findViewById(R.id.terminalGate);
+        mGateTextView = (TextView) findViewById(R.id.terminalGate);
         mBusinessClasBtn = (Button) findViewById(R.id.businessCLass);
 
     }
@@ -64,6 +64,6 @@ public class FlightDetailsItemView extends RelativeLayout {
         mFlightTimeTextView.setText(flightDetails.getDepartureTime() + "-" + flightDetails.getArrivalTime());
         //mFlightDateTextView.setText(DateFormatConverter.convertDate(new Date()));
         mFlightDateTextView.setText(flightDetails.getFightDate());
-        // mGateTextView.setText(flightDetails.getGateNo());
+        mGateTextView.setText(flightDetails.getGateNo());
     }
 }
