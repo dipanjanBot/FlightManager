@@ -1,12 +1,10 @@
-<!--
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context="com.cognizant.flymanager.subfragment.PassengerFragment">
 
@@ -67,7 +65,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -97,7 +95,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -215,7 +213,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -245,7 +243,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -309,7 +307,7 @@
         <LinearLayout
             android:id="@+id/p3"
             android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
@@ -363,7 +361,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -393,7 +391,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -511,7 +509,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -541,7 +539,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -659,7 +657,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -689,7 +687,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -807,7 +805,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -837,7 +835,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -955,7 +953,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -985,7 +983,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -1103,7 +1101,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -1133,7 +1131,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -1251,7 +1249,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -1281,7 +1279,7 @@
                     android:inputType="textPersonName"
                     android:textColor="@color/DarkBlue" />
 
-                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+                <!-- </RelativeLayout>-->
             </RelativeLayout>
 
             <RelativeLayout
@@ -1361,20 +1359,4 @@
 
     </LinearLayout>
 
-</ScrollView>-->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lightBlue"
-    tools:context="com.cognizant.flymanager.subfragment.PassengerFragment">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/passenger_form"
-        android:textSize="40dp"
-        android:textStyle="bold" />
-
-</RelativeLayout>
+</ScrollView>

@@ -5,69 +5,60 @@
     android:background="@color/lightBlue"
     tools:context="com.cognizant.flymanager.subfragment.PaymentAndConfirmBookingFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <!-- <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-         <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="Card Number"
-             android:textSize="30dp"
-             android:textStyle="bold" />
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_style"
+            android:padding="10dp"
+            android:textColor="@color/DarkBlue"
+            android:textSize="30dp" />
 
-         <EditText
-             android:id="@+id/cardNumber"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:background="@drawable/edittext_style"
-             android:padding="10dp"
-             android:textColor="@color/DarkBlue"
-             android:textSize="30dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-         <RelativeLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/expiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:hint="mm/yyexpiryDate" />
 
-             <EditText
-                 android:id="@+id/expiryDate"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_alignParentLeft="true"
-                 android:hint="mm/yyexpiryDate" />
+            <EditText
+                android:id="@+id/cvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:hint="CVV" />
+        </RelativeLayout>
 
-             <EditText
-                 android:id="@+id/cvv"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_alignParentRight="true"
-                 android:hint="CVV" />
-         </RelativeLayout>
+        <EditText
+            android:id="@+id/cardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CardHolder" />
 
-         <EditText
-             android:id="@+id/cardHolder"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:hint="CardHolder" />
-
-         <Button
-             android:id="@+id/payButton"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:background="@drawable/buttonstyle"
-             android:padding="25dp"
-             android:text="PAY"
-             android:textColor="@color/DarkBlue" />
-     </LinearLayout>-->
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/payment_coming_soon"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"
+            android:padding="25dp"
+            android:text="PAY"
+            android:textColor="@color/DarkBlue" />
+    </LinearLayout>
 
 </RelativeLayout>

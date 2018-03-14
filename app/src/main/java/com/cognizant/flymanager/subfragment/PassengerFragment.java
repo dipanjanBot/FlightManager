@@ -6,10 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.cognizant.flymanager.R;
+import com.cognizant.flymanager.subactivity.CustomViewIconTextTabsActivity;
 
 
 public class PassengerFragment extends Fragment implements AdapterView.OnItemSelectedListener, View.OnClickListener {
@@ -38,7 +41,7 @@ public class PassengerFragment extends Fragment implements AdapterView.OnItemSel
         loadPassengerForm(noOfPassenger);
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_two, container, false);
-       /* genderspinner = (Spinner) view.findViewById(R.id.p1_gender_select);
+        genderspinner = (Spinner) view.findViewById(R.id.p1_gender_select);
         ArrayAdapter<String> adapter_state = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_spinner_item, gender);
         adapter_state
@@ -46,7 +49,7 @@ public class PassengerFragment extends Fragment implements AdapterView.OnItemSel
         genderspinner.setAdapter(adapter_state);
         genderspinner.setOnItemSelectedListener(this);
         confirm = (Button) view.findViewById(R.id.confirm_fillUp);
-        confirm.setOnClickListener(this);*/
+        confirm.setOnClickListener(this);
         return view;
     }
 
@@ -62,12 +65,12 @@ public class PassengerFragment extends Fragment implements AdapterView.OnItemSel
 
     @Override
     public void onClick(View v) {
-      /*  switch (v.getId()) {
+        switch (v.getId()) {
             case R.id.confirm_fillUp:
                 ((CustomViewIconTextTabsActivity) getActivity()).setCurrentItem(2, true);
 
                 break;
-        }*/
+        }
     }
 
     /**
@@ -76,7 +79,7 @@ public class PassengerFragment extends Fragment implements AdapterView.OnItemSel
      * @param noOfPassenger
      */
     private void loadPassengerForm(int noOfPassenger) {
-/*
+
         if (noOfPassenger > 2) {
             LinearLayout p1Form = (LinearLayout) view.findViewById(R.id.p1);
             p1Form.setVisibility(View.VISIBLE);
@@ -112,6 +115,6 @@ public class PassengerFragment extends Fragment implements AdapterView.OnItemSel
         if (noOfPassenger > 10) {
             LinearLayout p9Form = (LinearLayout) view.findViewById(R.id.p9);
             p9Form.setVisibility(View.VISIBLE);
-        }*/
+        }
     }
 }
