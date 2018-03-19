@@ -62,7 +62,7 @@ public class PassengerFragment extends Fragment implements AdapterView.OnItemSel
 
     @Override
     public void onClick(View v) {
-      /*  switch (v.getId()) {
+       /* switch (v.getId()) {
             case R.id.confirm_fillUp:
                 ((CustomViewIconTextTabsActivity) getActivity()).setCurrentItem(2, true);
 
@@ -76,8 +76,8 @@ public class PassengerFragment extends Fragment implements AdapterView.OnItemSel
      * @param noOfPassenger
      */
     private void loadPassengerForm(int noOfPassenger) {
-/*
-        if (noOfPassenger > 2) {
+
+       /* if (noOfPassenger > 2) {
             LinearLayout p1Form = (LinearLayout) view.findViewById(R.id.p1);
             p1Form.setVisibility(View.VISIBLE);
         }

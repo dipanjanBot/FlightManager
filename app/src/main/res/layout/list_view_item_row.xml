@@ -91,22 +91,23 @@
             android:padding="10dp">
 
 
-            <TextView
-                android:id="@+id/terminalGateLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="false"
-                android:text="Gate No: "
-                android:textColor="@color/White" />
+            <!--         <TextView
+                         android:id="@+id/terminalGateLabel"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_alignParentRight="false"
+                         android:text="Gate No: "
+                         android:textColor="@color/White" />
 
-            <TextView
-                android:id="@+id/terminalGate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/terminalGateLabel"
-                android:text="23"
-                android:textColor="@color/White" />
+                     <TextView
+                         android:id="@+id/terminalGate"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/terminalGateLabel"
+                         android:text="23"
+                         android:textColor="@color/White" />
+           -->
             <TextView
                 android:id="@+id/flyDateLabel"
                 android:layout_width="wrap_content"
